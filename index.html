@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enis Kaban - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Enis Kaban</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Enis Kaban</h1>
+                <p>Full Stack Developer & Cloud Architecture Specialist</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Enis Kaban" class="profile-img">
+                <div class="about-text">
+                    <p>I'm a passionate full-stack developer with expertise in cloud architecture and microservices. With 5 years of experience in building scalable applications, I focus on creating efficient and maintainable solutions.</p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>Cloud Architecture (AWS, Azure)</li>
+                            <li>Microservices Development</li>
+                            <li>Docker & Kubernetes</li>
+                            <li>Node.js & Python</li>
+                            <li>React & Vue.js</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/ecommerce-platform.svg" alt="Cloud Migration Platform" loading="lazy">
+                    <h3>Cloud Migration Platform</h3>
+                    <p>A comprehensive platform for automating cloud infrastructure migration with real-time monitoring and rollback capabilities.</p>
+                    <div class="project-tech">
+                        <span>AWS</span>
+                        <span>Python</span>
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/task-management.svg" alt="Microservices Dashboard" loading="lazy">
+                    <h3>Microservices Dashboard</h3>
+                    <p>A real-time monitoring dashboard for microservices architecture with automated scaling and health checks.</p>
+                    <div class="project-tech">
+                        <span>Kubernetes</span>
+                        <span>Node.js</span>
+                        <span>Vue.js</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project3.jpg" alt="DevOps Automation Suite">
+                    <h3>DevOps Automation Suite</h3>
+                    <p>An end-to-end automation suite for CI/CD pipelines with integrated security scanning and deployment verification.</p>
+                    <div class="project-tech">
+                        <span>Docker</span>
+                        <span>Jenkins</span>
+                        <span>Go</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+            <p>&copy; 2024 Enis Kaban. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

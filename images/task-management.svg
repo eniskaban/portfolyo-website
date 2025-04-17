@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f5f5f5"/>
+    
+    <!-- Task Board -->
+    <g transform="translate(50, 50)">
+        <!-- Board Columns -->
+        <rect x="0" y="0" width="200" height="450" fill="#e0e0e0" rx="10"/>
+        <rect x="250" y="0" width="200" height="450" fill="#e0e0e0" rx="10"/>
+        <rect x="500" y="0" width="200" height="450" fill="#e0e0e0" rx="10"/>
+        
+        <!-- Column Headers -->
+        <rect x="0" y="0" width="200" height="50" fill="#2196f3" rx="10"/>
+        <rect x="250" y="0" width="200" height="50" fill="#ff9800" rx="10"/>
+        <rect x="500" y="0" width="200" height="50" fill="#4caf50" rx="10"/>
+        
+        <text x="70" y="30" fill="white" font-family="Arial" font-size="20">To Do</text>
+        <text x="320" y="30" fill="white" font-family="Arial" font-size="20">In Progress</text>
+        <text x="570" y="30" fill="white" font-family="Arial" font-size="20">Done</text>
+        
+        <!-- Task Cards -->
+        <g transform="translate(20, 70)">
+            <!-- To Do Cards -->
+            <rect width="160" height="100" fill="white" rx="5" filter="url(#shadow)"/>
+            <text x="20" y="30" font-family="Arial" font-size="14">Design Homepage</text>
+            <text x="20" y="70" font-family="Arial" font-size="12" fill="#666">Priority: High</text>
+            
+            <rect y="120" width="160" height="100" fill="white" rx="5" filter="url(#shadow)"/>
+            <text x="20" y="150" font-family="Arial" font-size="14">API Integration</text>
+            <text x="20" y="190" font-family="Arial" font-size="12" fill="#666">Priority: Medium</text>
+        </g>
+        
+        <g transform="translate(270, 70)">
+            <!-- In Progress Cards -->
+            <rect width="160" height="100" fill="white" rx="5" filter="url(#shadow)"/>
+            <text x="20" y="30" font-family="Arial" font-size="14">Database Setup</text>
+            <text x="20" y="70" font-family="Arial" font-size="12" fill="#666">In Review</text>
+        </g>
+        
+        <g transform="translate(520, 70)">
+            <!-- Done Cards -->
+            <rect width="160" height="100" fill="white" rx="5" filter="url(#shadow)"/>
+            <text x="20" y="30" font-family="Arial" font-size="14">User Auth</text>
+            <text x="20" y="70" font-family="Arial" font-size="12" fill="#666">Completed</text>
+        </g>
+    </g>
+    
+    <!-- Filters -->
+    <defs>
+        <filter id="shadow" x="-2" y="-2" width="110%" height="110%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2"/>
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="2"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+    </defs>
+</svg>
